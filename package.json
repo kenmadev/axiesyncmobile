@@ -1,0 +1,43 @@
+{
+  "name": "axiesyncmobile",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "clean": "cd android && gradlew.bat clean && cd ../",
+    "prerelease": "npm run clean",
+    "release": "cd android && gradlew.bat assembleRelease && cd ../",
+    "dev": "npm run clean && npx react-native run-android"
+  },
+  "dependencies": {
+    "@types/styled-components": "^5.1.15",
+    "axios": "^0.24.0",
+    "events": "^3.3.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "react": "17.0.2",
+    "react-native": "0.66.3",
+    "react-native-background-actions": "^2.6.5",
+    "react-native-confirm-dialog": "^0.1.0",
+    "react-native-fs": "^2.18.0",
+    "retry-axios": "^2.6.0",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "7.14.0",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "^0.66.2",
+    "react-test-renderer": "17.0.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
