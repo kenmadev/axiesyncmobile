@@ -8,9 +8,9 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "clean": "cd android && gradlew.bat clean && cd ../",
+    "clean": "cd android && gradlew uninstallAll && gradlew clean && cd ../",
     "prerelease": "npm run clean",
-    "release": "cd android && gradlew.bat assembleRelease && cd ../",
+    "release": "npm run clean && cd android && gradlew.bat assembleRelease && cd ../",
     "dev": "npm run clean && npx react-native run-android"
   },
   "dependencies": {
