@@ -18,6 +18,11 @@ Axie Infinity replaced it by storing the battle history into the device as a `ca
 This project let players sync their battle history into the cloud just by using the application. Which may help managers track their scholars just like the old days.
 It's still unknown when is the new Battle logs API gonna come out. Until then, the Axie Sync project remains.
 
+## Axie Project
+- [axie-sync-server](https://github.com/kenmadev/axie-sync-server) - This handles all the request from pc and mobile clients. Store and query battle logs easily via the API.
+- [axie-sync-pc](https://github.com/kenmadev/axie-sync-pc) - The PC client that sync Axie Infinity battle history to `axie-sync-server`. Only available for Windows.
+- [axiesyncmobile](https://github.com/kenmadev/axiesyncmobile) - The Mobile client that sync Axie Infinity battle history to `axie-sync-server`. Only available for Android devices.
+
 ## How to use the application?
 1. Download and open the app and follow the guidelines for first time usage
 2. Your device file explorer should open. Look for Axie Infinity folder. Under `Android/data/com.axieinfinity.origin`. You know you're in the right folder if you see `cache` and `files` folders.
@@ -55,6 +60,12 @@ Run the development server and test the application.
 ```bash
 $ yarn dev
 ```
+
+## Build the App
+```bash
+$ yarn run release
+```
+An `apk` file will be generated inside `./app/build/outputs/apk` folder
 
 ## Can I setup my own server for the logs?
 Sure you can! Use the [Axie Sync Server](https://github.com/kenmadev/axie-sync-server) and host it yourself. Edit the `src/config.js` in this repo and look for `REMOTEAPI` key and replace it with your own remote API endpoint.
