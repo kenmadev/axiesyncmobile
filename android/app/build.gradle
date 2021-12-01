@@ -134,8 +134,8 @@ android {
         applicationId "com.axiesyncmobile"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        versionCode 10000010
+        versionName "0.1.0"
     }
     splits {
         abi {
