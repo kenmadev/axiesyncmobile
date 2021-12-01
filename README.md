@@ -56,9 +56,14 @@ $ cd axiesyncmobile
 $ yarn install
 ```
 
-Run the development server and test the application.
+Run the development server
 ```bash
-$ yarn dev
+$ yarn run start
+```
+
+Install to an emulator or a real device
+```bash
+$ yarn run android
 ```
 
 ## Build the App
