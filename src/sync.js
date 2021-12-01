@@ -18,6 +18,11 @@ const initialPath = `Android/data`;
 const battleHistoryFile = 'production-battleHistoriesState';
 const events = new EventEmitter();
 
+const BATTLETYPES = {
+  pvpbattle: 1,
+  pvebattle: 2,
+};
+
 const syncBattle = async data => {
   try {
     // read the first item on the list and sync it
@@ -27,6 +32,10 @@ const syncBattle = async data => {
     if (isEmpty(battle)) {
       throw new Error('Battle data is empty');
     }
+
+    // only record pvp battles
+    const {battleType = 0} = battle;
+    if (battleType !== BATTLETYPES.pvpbattle) return;
 
     // sync to server
     await BackgroundService.updateNotification({
