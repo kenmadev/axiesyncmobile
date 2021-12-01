@@ -59,6 +59,9 @@ $ yarn dev
 ## Can I setup my own server for the logs?
 Sure you can! Use the [Axie Sync Server](https://github.com/kenmadev/axie-sync-server) and host it yourself. Edit the `src/config.js` in this repo and look for `REMOTEAPI` key and replace it with your own remote API endpoint.
 
+## Do you have a Discord?
+Yup! Join our [Discord](https://discord.gg/3MQ63hSwqv) server.
+
 ## Donate
 I do this open source work in my free time. If you'd like me to invest more time on it, please donate. Thank you in advance!
 - BNB (BEP-20) or ETH (ERC-20) - `0xff66328040AeaD7ae1E7Ab5c858652cECD0a1ad2`
